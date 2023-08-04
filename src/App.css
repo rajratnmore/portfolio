@@ -1,38 +1,500 @@
-.App {
+/* Home Component Styling  */
+#navbar {
+  z-index: 1;
+}
+
+#navbar .toggleBtn {
+  background: #fff;
+  color: #1d3557;
+  font-size: 1rem;
+}
+
+#navbar .nav_link {
+  color: #fff;
+}
+
+#home {
+  background: #1d3557;
+  min-height: 60vh;
+}
+
+#home .profile-info {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  color: #fff;
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home .profile-image {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#home .profile-image .profile_pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#home .btn-cv {
+  margin-left: 1rem;
+  padding: 8px 30px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background: #f48c06;
+  color: #fff;
+}
+
+#home .btn-cv:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background: #0d3b66;
+}
+
+#home .image-container {
+  border-bottom: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 8px;
+}
+
+
+/* About Component Styling */
+
+#about {
+  min-height: 50vh;
+}
+
+#about .aboutCol {
+  margin: 6rem 0;
+}
+
+
+#about .about_hr {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  height: 3px;
+  background-color: #1d3557;
+  border-radius: 10px;
+}
+
+
+#about .aboutInfoContainer {
+  margin: 2rem 3rem;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 5px;
+}
+
+#about .aboutInfoContainer .aboutInfoPic {
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+}
+
+#about .about-container {
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+#about .about-container-description {
+  margin-top: 1rem;
+  /* font-family: "Lucida Console", Courier, monospace; */
+}
+
+#about .about-container-highlights {
+  margin-top: 3rem;
+  font-size: 1rem;
+  font-family: cursive;
+}
+
+#about .highlights {
+  font-family: "Lucida Console", Courier, monospace;
+  margin-bottom: 5px;
+}
+
+#about .btn-hire,
+#about .btn-cv {
+  margin-bottom: 10px;
+  padding: 5px 30px;
+  border-radius: 20px;
+}
+
+#about .btn-hire {
+  border: 1px solid #adb5bd;
+  color: #fff;
+  background: #adb5bd;
+}
+
+#about .btn-cv {
+  border: 1px solid transparent;
+  background: #f48c06;
+  color: #fff;
+}
+
+#about .btn-hire:hover {
+  border: 1px solid transparent;
+  background: #f48c06;
+  color: #fff;
+}
+
+#about .btn-cv:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background: #adb5bd;
+}
+
+
+/* Resume Component Styling */
+
+#resume {
+  min-height: 50vh;
+}
+
+#resume .resumeCol {
+  margin: 6rem 0;
+}
+
+
+#resume .about_hr {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+
+#resume .resumeInfoContainer {
+  margin: 2rem 3rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 5px;
+}
+
+#resume .resumeGroupList {
+  box-shadow: 0 0 15px black;
+}
+
+#resume .resume_GroupItem {
+  margin: 1rem 0;
+  padding: .5rem .7rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #1d3557;
+  border-radius: 20px;
+  letter-spacing: .03rem;
+  font-weight: bold;
+}
+
+#resume .resume_GroupItem:hover {
+  margin: 1rem 0;
+  padding: .5rem .7rem;
+  color: #fff;
+  background-color: #1d3557;
+  cursor: pointer;
+}
+
+
+
+#resume .resume_GroupItem .resume_skillIcon {
+  margin-right: .3rem;
+}
+
+#resume .resume-container {
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+#resume .education_list {
+  list-style: square;
+  color: #f48c06;
+}
+
+#resume .education_list .education_heading {
+  display: inline-block;
+  margin-right: 10%;
+}
+
+#resume .education_list .education_year {
+  display: inline-block;
+  background-color: #f48c06;
+  color: #fff;
+  letter-spacing: .1rem;
+  padding: 2px 20px;
+  border-radius: 5px;
+}
+
+#resume .extra_curricular {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+#resume .extra_curricular .extra_curricular_item {
+  width: 16rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+#resume .extra_curricular .extra_curricular_item .extra_curricular_icon {
+  background-color: #415a77;
+  font-size: 1.5rem;
+  color: #fff;
+
+}
+
+#resume .personal_details {
+  box-shadow: 0 0 5px black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+/* Project Component Styling */
+
+#project .projectCol {
+  min-height: 90vh;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  box-sizing: content-box;
+  padding: 1rem;
+}
+
+
+#project .about_hr {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  height: 3px;
+  background-color: #1d3557;
+  border-radius: 10px;
+}
+
+#project .project_container {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#project .project_btn:hover {
+  background: #90a1bb;
+  color: #fff;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Contact Component Styling */
+
+#contact .contactCol {
+
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  min-height: 80vh;
+
+}
+
+#contact .about_hr {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#contact .contact_container {
+  box-shadow: 0 0 5px #d1495b;
+  border-radius: 5px;
+}
+
+#contact .contact_container_first {
+  padding-top: 3rem;
+  padding-left: 8rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#contact .contact_container_second {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#contact .contact_container .btn-cv {
+  padding: 8px 30px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background: #0d3b66;
+  color: #fff;
+}
+
+#contact .contact_container .btn-cv:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+#contact .formBtn {
+  margin-top: 1rem;
+  margin-inline: auto;
+  padding-inline: 10%;
+  color: #fff;
+  border: none;
+  background-color: #0d3b66;
+}
+
+#contact .formBtn:hover {
+  margin-top: 1rem;
+  color: #0d3b66;
+  border: none;
+  background-color: #ffc107;
+}
+
+
+/* For Extra Small Screen Size */
+
+@media only screen and (max-width: 575px) {
+
+  #home .profile-info,
+  #home .profile-image {
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  #about .aboutCol,
+  #resume .resumeCol,
+  #project .projectCol,
+  #contact .contactCol {
+    margin: 2rem auto;
   }
+
+  #about .aboutInfoContainer .aboutInfoPic {
+    width: 200px;
+    display: block;
+    margin-inline: auto;
+  }
+
+  #resume .extra_curricular .extra_curricular_item {
+    width: 15rem;
+  }
+
+  #resume .resume-container {
+    margin-top: 2rem;
+    padding: 10px 7px;
+    box-sizing: border-box;
+  }
+
+  #contact .contact_container_first {
+    padding-left: 2rem;
+  }
+
+}
+
+/* For Small Screen Size */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+  #home .profile-info,
+  #home .profile-image {
+    margin: 0 auto;
+  }
+
+  #about .aboutCol,
+  #resume .resumeCol,
+  #project .projectCol,
+  #contact .contactCol {
+    margin: 3rem auto;
+  }
+
+  #about .aboutInfoContainer .aboutInfoPic {
+    display: block;
+    margin-inline: auto;
+  }
+
+  #resume .extra_curricular .extra_curricular_item {
+    width: 15rem;
+  }
+
+  #resume .resume-container {
+    margin-top: 2rem;
+    padding: 10px 7px;
+    box-sizing: border-box;
+  }
+
+}
+
+/* For Medium Screen Size */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  #about .aboutInfoContainer .aboutInfoPic {
+    display: block;
+    margin-inline: auto;
+  }
+
+  #resume .extra_curricular .extra_curricular_item {
+    width: 15rem;
+  }
+
+  #resume .resume-container {
+    margin-top: 2rem;
+    padding: 10px 7px;
+    box-sizing: border-box;
+  }
+
+}
+
+
+/* For Large Screen Size */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  #home .profile-info,
+  #home .profile-image {
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  #about .aboutInfoContainer .aboutInfoPic {
+    width: 350px;
+    height: inherit;
+    display: block;
+    margin-inline: auto;
+  }
+
+  #resume .education_list .education_heading {
+    display: inline-block;
+    margin-right: 5%;
+  }
+
+  #resume .education_list .education_year {
+    letter-spacing: .1rem;
+    padding: 2px 10px;
+    border-radius: 5px;
+  }
+
+  #resume .extra_curricular .extra_curricular_item {
+    width: 10rem;
+  }
+
+  #resume .resume-container {
+    margin-top: 2rem;
+    padding: 10px 7px;
+    box-sizing: border-box;
+  }
+
+  
+#project .project_container {
+  padding-inline: .5rem;
+}
+
 }
